@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/mokee/config/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    mokee.biometrics.fingerprint.inscreen@1.0-service.m1926
+    lineage.biometrics.fingerprint.inscreen@1.0-service.m1926
 
 # Init
 PRODUCT_PACKAGES += \
@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    mokee.livedisplay@2.0-init.sh \
-    mokee.livedisplay@2.0-service.m1926
+    lineage.livedisplay@2.0-init.sh \
+    lineage.livedisplay@2.0-service.m1926
 
 # Power
 PRODUCT_PACKAGES += \
@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    mokee.touch@1.0-service.m1926
+    lineage.touch@1.0-service.m1926
 
 # Inherit from sm6150-common
 $(call inherit-product, device/meizu/sm6150-common/common.mk)

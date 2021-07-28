@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_MOKEE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
-#define VENDOR_MOKEE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sdm {
@@ -31,7 +31,7 @@ namespace sdm {
 }  // namespace sdm
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_MOKEE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "mokee.biometrics.fingerprint.inscreen@1.0-service.m1926"
+#define LOG_TAG "lineage.biometrics.fingerprint.inscreen@1.0-service.m1926"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -25,8 +25,8 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::mokee::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreen;
-using vendor::mokee::biometrics::fingerprint::inscreen::V1_0::implementation::FingerprintInscreen;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreen;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::implementation::FingerprintInscreen;
 
 using android::OK;
 using android::status_t;

@@ -16,7 +16,7 @@
 
 #define GESTURE_CONTROL_PATH "/sys/class/meizu/tp/gesture_control"
 
-#define DT2W_FIFO_PATH "/dev/mokee.touch@1.0/dt2w"
+#define DT2W_FIFO_PATH "/dev/lineage.touch@1.0/dt2w"
 
 #define SLIDE_LEFT_ENABLE   (1 << 0)
 #define SLIDE_RIGHT_ENABLE  (1 << 1)
@@ -45,7 +45,7 @@ static std::string hex(uint32_t value) {
 }  // anonymous namespace
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -89,7 +89,7 @@ Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb re
 }
 
 Return<bool> TouchscreenGesture::setGestureEnabled(
-    const ::vendor::mokee::touch::V1_0::Gesture& gesture, bool enabled) {
+    const ::vendor::lineage::touch::V1_0::Gesture& gesture, bool enabled) {
     const auto entry = kGestureInfoMap.find(gesture.id);
     if (entry == kGestureInfoMap.end()) {
         return false;
@@ -137,5 +137,5 @@ bool TouchscreenGesture::setValue(uint32_t value, bool enabled) {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor

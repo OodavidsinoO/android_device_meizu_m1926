@@ -27,7 +27,7 @@ using android::base::Trim;
 using android::base::WriteStringToFile;
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -37,7 +37,7 @@ bool SunlightEnhancement::isSupported() {
     return hbm.good();
 }
 
-// Methods from ::vendor::mokee::livedisplay::V2_0::ISunlightEnhancement follow.
+// Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
 Return<bool> SunlightEnhancement::isEnabled() {
     std::string tmp;
     int32_t contents = 0;
@@ -56,5 +56,5 @@ Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor

@@ -5,16 +5,16 @@
  *
  */
 
-#ifndef VENDOR_MOKEE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
-#define VENDOR_MOKEE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#ifndef VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#define VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/mokee/touch/1.0/ITouchscreenGesture.h>
+#include <vendor/lineage/touch/1.0/ITouchscreenGesture.h>
 #include <map>
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -27,9 +27,9 @@ class TouchscreenGesture : public ITouchscreenGesture {
   public:
     TouchscreenGesture();
 
-    // Methods from ::vendor::mokee::touch::V1_0::ITouchscreenGesture follow.
+    // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
     Return<void> getSupportedGestures(getSupportedGestures_cb resultCb) override;
-    Return<bool> setGestureEnabled(const ::vendor::mokee::touch::V1_0::Gesture& gesture,
+    Return<bool> setGestureEnabled(const ::vendor::lineage::touch::V1_0::Gesture& gesture,
                                    bool enabled) override;
 
   private:
@@ -47,7 +47,7 @@ class TouchscreenGesture : public ITouchscreenGesture {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_MOKEE_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#endif  // VENDOR_LINEAGE_TOUCH_V1_0_TOUCHSCREENGESTURE_H

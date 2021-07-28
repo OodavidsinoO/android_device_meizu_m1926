@@ -1,6 +1,6 @@
 <manifest version="1.0" type="framework">
     <hal format="hidl">
-        <name>vendor.mokee.biometrics.fingerprint.inscreen</name>
+        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -9,7 +9,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.mokee.livedisplay</name>
+        <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
         <interface>
@@ -26,7 +26,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.mokee.touch</name>
+        <name>vendor.lineage.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>

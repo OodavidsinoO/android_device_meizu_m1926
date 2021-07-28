@@ -23,7 +23,7 @@
 #include "Types.h"
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sdm {
@@ -198,7 +198,7 @@ Return<void> PictureAdjustment::getDefaultPictureAdjustment(
 }
 
 Return<bool> PictureAdjustment::setPictureAdjustment(
-        const ::vendor::mokee::livedisplay::V2_0::HSIC& hsic) {
+        const ::vendor::lineage::livedisplay::V2_0::HSIC& hsic) {
     hsic_config config = {0,
                           {static_cast<int32_t>(hsic.hue), hsic.saturation, hsic.intensity,
                            hsic.contrast, hsic.saturationThreshold}};
@@ -213,5 +213,5 @@ Return<bool> PictureAdjustment::setPictureAdjustment(
 }  // namespace sdm
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor

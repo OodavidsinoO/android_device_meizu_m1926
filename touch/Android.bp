@@ -5,8 +5,8 @@
 //
 
 cc_binary {
-    name: "mokee.touch@1.0-service.m1926",
-    init_rc: ["mokee.touch@1.0-service.m1926.rc"],
+    name: "lineage.touch@1.0-service.m1926",
+    init_rc: ["lineage.touch@1.0-service.m1926.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -20,6 +20,6 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "vendor.mokee.touch@1.0",
+        "vendor.lineage.touch@1.0",
     ],
 }

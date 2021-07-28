@@ -17,7 +17,7 @@
 #include <sys/stat.h>
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -87,5 +87,5 @@ error:
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor

@@ -27,13 +27,13 @@ using android::base::ReadFileToString;
 using android::base::Trim;
 using android::base::WriteStringToFile;
 
-using ::vendor::mokee::livedisplay::V2_0::sdm::PictureAdjustment;
+using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
 
 #define INVALID -1
 #define DEFAULT 1
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -75,7 +75,7 @@ DisplayMode DisplayModes::getDefaultDisplayModeInternal() {
     return defaultMode.id != INVALID ? defaultMode : mDisplayModes[DEFAULT];
 }
 
-// Methods from ::vendor::mokee::livedisplay::V2_0::IDisplayModes follow.
+// Methods from ::vendor::lineage::livedisplay::V2_0::IDisplayModes follow.
 Return<void> DisplayModes::getDisplayModes(getDisplayModes_cb _hidl_cb) {
     _hidl_cb(mDisplayModes);
     return Void();
@@ -115,5 +115,5 @@ Return<bool> DisplayModes::setDisplayMode(int32_t modeID, bool makeDefault) {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor

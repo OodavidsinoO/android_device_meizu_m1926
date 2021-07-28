@@ -8,8 +8,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "mokee.biometrics.fingerprint.inscreen@1.0-service.m1926",
-    init_rc: ["mokee.biometrics.fingerprint.inscreen@1.0-service.m1926.rc"],
+    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.m1926",
+    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.m1926.rc"],
     srcs: [
         "KeyEventWatcher.cpp",
         "FingerprintInscreen.cpp",
@@ -24,7 +24,7 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "libcutils",
-        "vendor.mokee.biometrics.fingerprint.inscreen@1.0",
+        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
         "vendor.goodix.hardware.biometrics.fingerprint@2.1",
     ],
 }

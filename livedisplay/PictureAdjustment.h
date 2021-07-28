@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_MOKEE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
-#define VENDOR_MOKEE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
 
-#include <vendor/mokee/livedisplay/2.0/IPictureAdjustment.h>
+#include <vendor/lineage/livedisplay/2.0/IPictureAdjustment.h>
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sdm {
@@ -36,7 +36,7 @@ class PictureAdjustment : public IPictureAdjustment {
 
     bool isSupported();
 
-    // Methods from ::vendor::mokee::livedisplay::V2_0::IPictureAdjustment follow.
+    // Methods from ::vendor::lineage::livedisplay::V2_0::IPictureAdjustment follow.
     Return<void> getHueRange(getHueRange_cb _hidl_cb) override;
     Return<void> getSaturationRange(getSaturationRange_cb _hidl_cb) override;
     Return<void> getIntensityRange(getIntensityRange_cb _hidl_cb) override;
@@ -45,7 +45,7 @@ class PictureAdjustment : public IPictureAdjustment {
     Return<void> getPictureAdjustment(getPictureAdjustment_cb _hidl_cb) override;
     Return<void> getDefaultPictureAdjustment(getDefaultPictureAdjustment_cb _hidl_cb) override;
     Return<bool> setPictureAdjustment(
-            const ::vendor::mokee::livedisplay::V2_0::HSIC& hsic) override;
+            const ::vendor::lineage::livedisplay::V2_0::HSIC& hsic) override;
 
     static void updateDefaultPictureAdjustment();
 
@@ -66,7 +66,7 @@ class PictureAdjustment : public IPictureAdjustment {
 }  // namespace sdm
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_MOKEE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
