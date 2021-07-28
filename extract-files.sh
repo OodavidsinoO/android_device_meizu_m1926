@@ -15,8 +15,8 @@ export VENDOR=meizu
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-MOKEE_ROOT="${MY_DIR}/../../.."
+LINEAGE_ROOT="${MY_DIR}/../../.."
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
 
-BLOB_ROOT="${MOKEE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
