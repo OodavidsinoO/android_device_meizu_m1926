@@ -1,0 +1,12 @@
+on init
+    chown system system /sys/class/meizu/tp/gesture_control
+    chmod 0660 /sys/class/meizu/tp/gesture_control
+
+    mkdir /dev/mokee.touch@1.0
+    chown system system /dev/mokee.touch@1.0
+    chmod 0755 /dev/mokee.touch@1.0
+
+service touch-hal-1-0-m1926 /system/bin/hw/mokee.touch@1.0-service.m1926
+    class hal
+    user system
+    group system

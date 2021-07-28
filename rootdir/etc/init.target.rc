@@ -1,0 +1,10 @@
+on early-fs
+    mount none /system/etc/vendor_fstab.qcom /vendor/etc/fstab.qcom bind
+
+on post-fs
+    mount none /system/lib/hw/android.hardware.power@1.0-impl.m1926.so /vendor/lib/hw/android.hardware.power@1.0-impl.so bind
+    mount none /system/lib64/hw/android.hardware.power@1.0-impl.m1926.so /vendor/lib64/hw/android.hardware.power@1.0-impl.so bind
+
+    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+    mount none /system/etc/a2dp_audio_policy_configuration.xml /vendor/etc/a2dp_audio_policy_configuration.xml bind
+    mount none /dev/null /vendor/overlay/BluetoothResCommon.apk bind
