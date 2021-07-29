@@ -20,7 +20,6 @@ cc_binary {
         "libhardware",
         "libhidlbase",
         "liblog",
-        "libhwbinder",
         "libutils",
         "libcutils",
         "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
