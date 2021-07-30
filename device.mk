@@ -56,5 +56,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.m1926
 
+# GCamGo
+PRODUCT_PACKAGES += \
+    GCamGo
+
+# ViaBrowser
+PRODUCT_PACKAGES += \
+    ViaBrowser
+
 # Inherit from sm6150-common
 $(call inherit-product, device/meizu/sm6150-common/common.mk)
