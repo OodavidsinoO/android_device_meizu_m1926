@@ -35,5 +35,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=400
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    fod.dimming.min=40 \
+    fod.dimming.min=5 \
     fod.dimming.max=250
