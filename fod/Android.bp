@@ -8,8 +8,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "asop.biometrics.fingerprint.inscreen@1.0-service.m1926",
-    init_rc: ["asop.biometrics.fingerprint.inscreen@1.0-service.m1926.rc"],
+    name: "aosp.biometrics.fingerprint.inscreen@1.0-service.m1926",
+    init_rc: ["aosp.biometrics.fingerprint.inscreen@1.0-service.m1926.rc"],
     srcs: [
         "KeyEventWatcher.cpp",
         "FingerprintInscreen.cpp",
@@ -22,7 +22,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libcutils",
-        "vendor.asop.biometrics.fingerprint.inscreen@1.0",
+        "vendor.aosp.biometrics.fingerprint.inscreen@1.0",
         "vendor.goodix.hardware.biometrics.fingerprint@2.1",
     ],
 }

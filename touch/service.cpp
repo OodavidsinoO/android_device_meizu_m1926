@@ -5,15 +5,15 @@
  *
  */
 
-#define LOG_TAG "asop.touch@1.0-service.m1926"
+#define LOG_TAG "aosp.touch@1.0-service.m1926"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
 #include "TouchscreenGesture.h"
 
-using ::vendor::asop::touch::V1_0::ITouchscreenGesture;
-using ::vendor::asop::touch::V1_0::implementation::TouchscreenGesture;
+using ::vendor::aosp::touch::V1_0::ITouchscreenGesture;
+using ::vendor::aosp::touch::V1_0::implementation::TouchscreenGesture;
 
 int main() {
     android::sp<ITouchscreenGesture> service = new TouchscreenGesture();

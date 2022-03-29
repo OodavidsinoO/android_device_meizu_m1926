@@ -1,6 +1,6 @@
 <manifest version="1.0" type="framework">
     <hal format="hidl">
-        <name>vendor.asop.biometrics.fingerprint.inscreen</name>
+        <name>vendor.aosp.biometrics.fingerprint.inscreen</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -9,7 +9,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.asop.livedisplay</name>
+        <name>vendor.aosp.livedisplay</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
         <interface>
@@ -26,7 +26,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.asop.touch</name>
+        <name>vendor.aosp.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>

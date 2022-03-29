@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_ASOP_LIVEDISPLAY_V2_0_DISPLAYMODES_H
-#define VENDOR_ASOP_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#ifndef VENDOR_AOSP_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#define VENDOR_AOSP_LIVEDISPLAY_V2_0_DISPLAYMODES_H
 
-#include <vendor/asop/livedisplay/2.0/IDisplayModes.h>
+#include <vendor/aosp/livedisplay/2.0/IDisplayModes.h>
 
 namespace vendor {
-namespace asop {
+namespace aosp {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -30,7 +30,7 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 
 #define FILE_LUT "/sys/class/meizu/lcm/display/lut"
-#define FILE_LUT_DEFAULT "/data/vendor/display/asop_color_profile"
+#define FILE_LUT_DEFAULT "/data/vendor/display/aosp_color_profile"
 
 class DisplayModes : public IDisplayModes {
   public:
@@ -38,7 +38,7 @@ class DisplayModes : public IDisplayModes {
 
     bool isSupported();
 
-    // Methods from ::vendor::asop::livedisplay::V2_0::IDisplayModes follow.
+    // Methods from ::vendor::aosp::livedisplay::V2_0::IDisplayModes follow.
     Return<void> getDisplayModes(getDisplayModes_cb _hidl_cb) override;
     Return<void> getCurrentDisplayMode(getCurrentDisplayMode_cb _hidl_cb) override;
     Return<void> getDefaultDisplayMode(getDefaultDisplayMode_cb _hidl_cb) override;
@@ -54,7 +54,7 @@ class DisplayModes : public IDisplayModes {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace asop
+}  // namespace aosp
 }  // namespace vendor
 
-#endif  // VENDOR_ASOP_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#endif  // VENDOR_AOSP_LIVEDISPLAY_V2_0_DISPLAYMODES_H

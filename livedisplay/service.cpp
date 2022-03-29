@@ -17,7 +17,7 @@
 
 #include <dlfcn.h>
 
-#define LOG_TAG "asop.livedisplay@2.0-service-m1926"
+#define LOG_TAG "aosp.livedisplay@2.0-service-m1926"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -38,12 +38,12 @@ using android::status_t;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using ::vendor::asop::livedisplay::V2_0::IDisplayModes;
-using ::vendor::asop::livedisplay::V2_0::IPictureAdjustment;
-using ::vendor::asop::livedisplay::V2_0::ISunlightEnhancement;
-using ::vendor::asop::livedisplay::V2_0::sdm::PictureAdjustment;
-using ::vendor::asop::livedisplay::V2_0::sysfs::DisplayModes;
-using ::vendor::asop::livedisplay::V2_0::sysfs::SunlightEnhancement;
+using ::vendor::aosp::livedisplay::V2_0::IDisplayModes;
+using ::vendor::aosp::livedisplay::V2_0::IPictureAdjustment;
+using ::vendor::aosp::livedisplay::V2_0::ISunlightEnhancement;
+using ::vendor::aosp::livedisplay::V2_0::sdm::PictureAdjustment;
+using ::vendor::aosp::livedisplay::V2_0::sysfs::DisplayModes;
+using ::vendor::aosp::livedisplay::V2_0::sysfs::SunlightEnhancement;
 
 int main() {
     // Vendor backend

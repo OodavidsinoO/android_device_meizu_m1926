@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_ASOP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
-#define VENDOR_ASOP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#ifndef VENDOR_AOSP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#define VENDOR_AOSP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
 
 namespace vendor {
-namespace asop {
+namespace aosp {
 namespace livedisplay {
 namespace V2_0 {
 namespace sdm {
@@ -31,7 +31,7 @@ namespace sdm {
 }  // namespace sdm
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace asop
+}  // namespace aosp
 }  // namespace vendor
 
-#endif  // VENDOR_ASOP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#endif  // VENDOR_AOSP_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H

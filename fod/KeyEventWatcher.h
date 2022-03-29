@@ -5,8 +5,8 @@
  *
  */
 
-#ifndef VENDOR_ASOP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H
-#define VENDOR_ASOP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H
+#ifndef VENDOR_AOSP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H
+#define VENDOR_AOSP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H
 
 #include <functional>
 #include <string>
@@ -14,7 +14,7 @@
 #include <linux/input.h>
 
 namespace vendor {
-namespace asop {
+namespace aosp {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -43,7 +43,7 @@ class KeyEventWatcher {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace asop
+}  // namespace aosp
 }  // namespace vendor
 
-#endif  // VENDOR_ASOP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H
+#endif  // VENDOR_AOSP_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_KEYEVENTWATCHER_H

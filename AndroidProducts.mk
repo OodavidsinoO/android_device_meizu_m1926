@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/asop_m1926.mk
+    $(LOCAL_DIR)/aosp_m1926.mk
 
 COMMON_LUNCH_CHOICES := \
-    asop_m1926-userdebug
+    aosp_m1926-userdebug

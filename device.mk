@@ -9,7 +9,7 @@ $(call inherit-product, vendor/meizu/m1926/m1926-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-asop
+    $(LOCAL_PATH)/overlay-aosp
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2232
@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/asop/config/permissions/vendor.asop.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.asop.biometrics.fingerprint.inscreen.xml
+    vendor/aosp/config/permissions/vendor.aosp.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.aosp.biometrics.fingerprint.inscreen.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    asop.biometrics.fingerprint.inscreen@1.0-service.m1926
+    aosp.biometrics.fingerprint.inscreen@1.0-service.m1926
 
 # Init
 PRODUCT_PACKAGES += \
@@ -45,8 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    asop.livedisplay@2.0-init.sh \
-    asop.livedisplay@2.0-service.m1926
+    aosp.livedisplay@2.0-init.sh \
+    aosp.livedisplay@2.0-service.m1926
 
 # Power
 PRODUCT_PACKAGES += \
@@ -54,7 +54,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    asop.touch@1.0-service.m1926
+    aosp.touch@1.0-service.m1926
 
 # Inherit from sm6150-common
 $(call inherit-product, device/meizu/sm6150-common/common.mk)

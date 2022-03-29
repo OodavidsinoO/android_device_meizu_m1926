@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from m1926 device
 $(call inherit-product, device/meizu/m1926/device.mk)
 
-$(call inherit-product, vendor/asop/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=DavidSin
 
-PRODUCT_NAME := asop_m1926
+PRODUCT_NAME := aosp_m1926
 PRODUCT_BRAND := meizu
 PRODUCT_DEVICE := m1926
 PRODUCT_MANUFACTURER := meizu

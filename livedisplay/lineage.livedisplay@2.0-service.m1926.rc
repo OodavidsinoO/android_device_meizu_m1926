@@ -1,4 +1,4 @@
-service livedisplay-hal-2-0-m1926 /system/bin/hw/asop.livedisplay@2.0-service.m1926
+service livedisplay-hal-2-0-m1926 /system/bin/hw/aosp.livedisplay@2.0-service.m1926
     class late_start
     user system
     group system
@@ -8,4 +8,4 @@ on post-fs-data
     chown system system /data/vendor/display
 
 on property:sys.boot_completed=1
-    exec - system system -- /system/bin/asop.livedisplay@2.0-init.sh
+    exec - system system -- /system/bin/aosp.livedisplay@2.0-init.sh

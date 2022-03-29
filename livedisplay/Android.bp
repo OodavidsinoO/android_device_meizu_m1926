@@ -14,8 +14,8 @@
 // limitations under the License.
 
 cc_binary {
-    name: "asop.livedisplay@2.0-service.m1926",
-    init_rc: ["asop.livedisplay@2.0-service.m1926.rc"],
+    name: "aosp.livedisplay@2.0-service.m1926",
+    init_rc: ["aosp.livedisplay@2.0-service.m1926.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -32,6 +32,6 @@ cc_binary {
         "libdl",
         "libhidlbase",
         "libutils",
-        "vendor.asop.livedisplay@2.0",
+        "vendor.aosp.livedisplay@2.0",
     ],
 }

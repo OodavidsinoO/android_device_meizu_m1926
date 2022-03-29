@@ -2,11 +2,11 @@ on init
     chown system system /sys/class/meizu/tp/gesture_control
     chmod 0660 /sys/class/meizu/tp/gesture_control
 
-    mkdir /dev/asop.touch@1.0
-    chown system system /dev/asop.touch@1.0
-    chmod 0755 /dev/asop.touch@1.0
+    mkdir /dev/aosp.touch@1.0
+    chown system system /dev/aosp.touch@1.0
+    chmod 0755 /dev/aosp.touch@1.0
 
-service touch-hal-1-0-m1926 /system/bin/hw/asop.touch@1.0-service.m1926
+service touch-hal-1-0-m1926 /system/bin/hw/aosp.touch@1.0-service.m1926
     class hal
     user system
     group system

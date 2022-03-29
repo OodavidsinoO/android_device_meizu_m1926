@@ -15,8 +15,8 @@ export VENDOR=meizu
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ASOP_ROOT="${MY_DIR}/../../.."
+AOSP_ROOT="${MY_DIR}/../../.."
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
 
-BLOB_ROOT="${ASOP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+BLOB_ROOT="${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"

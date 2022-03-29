@@ -5,16 +5,16 @@
  *
  */
 
-#ifndef VENDOR_ASOP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
-#define VENDOR_ASOP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#ifndef VENDOR_AOSP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#define VENDOR_AOSP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
-#include <vendor/asop/touch/1.0/ITouchscreenGesture.h>
+#include <vendor/aosp/touch/1.0/ITouchscreenGesture.h>
 #include <map>
 
 namespace vendor {
-namespace asop {
+namespace aosp {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -27,9 +27,9 @@ class TouchscreenGesture : public ITouchscreenGesture {
   public:
     TouchscreenGesture();
 
-    // Methods from ::vendor::asop::touch::V1_0::ITouchscreenGesture follow.
+    // Methods from ::vendor::aosp::touch::V1_0::ITouchscreenGesture follow.
     Return<void> getSupportedGestures(getSupportedGestures_cb resultCb) override;
-    Return<bool> setGestureEnabled(const ::vendor::asop::touch::V1_0::Gesture& gesture,
+    Return<bool> setGestureEnabled(const ::vendor::aosp::touch::V1_0::Gesture& gesture,
                                    bool enabled) override;
 
   private:
@@ -47,7 +47,7 @@ class TouchscreenGesture : public ITouchscreenGesture {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace asop
+}  // namespace aosp
 }  // namespace vendor
 
-#endif  // VENDOR_ASOP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
+#endif  // VENDOR_AOSP_TOUCH_V1_0_TOUCHSCREENGESTURE_H
