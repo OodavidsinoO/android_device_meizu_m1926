@@ -12,8 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from m1926 device
 $(call inherit-product, device/meizu/m1926/device.mk)
 
-# Inherit some common MoKee stuff.
-$(call inherit-product, vendor/asop/config/common_full_phone.mk)
+$(call inherit-product, vendor/asop/config/common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=DavidSin
