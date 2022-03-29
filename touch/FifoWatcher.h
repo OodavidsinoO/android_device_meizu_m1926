@@ -5,15 +5,15 @@
  *
  */
 
-#ifndef VENDOR_LINEAGE_TOUCH_V1_0_FIFOWATCHER_H
-#define VENDOR_LINEAGE_TOUCH_V1_0_FIFOWATCHER_H
+#ifndef VENDOR_ASOP_TOUCH_V1_0_FIFOWATCHER_H
+#define VENDOR_ASOP_TOUCH_V1_0_FIFOWATCHER_H
 
 #include <functional>
 #include <string>
 #include <pthread.h>
 
 namespace vendor {
-namespace lineage {
+namespace asop {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -38,7 +38,7 @@ class FifoWatcher {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace lineage
+}  // namespace asop
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_TOUCH_V1_0_FIFOWATCHER_H
+#endif  // VENDOR_ASOP_TOUCH_V1_0_FIFOWATCHER_H

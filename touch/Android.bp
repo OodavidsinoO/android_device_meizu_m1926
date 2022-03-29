@@ -5,8 +5,8 @@
 //
 
 cc_binary {
-    name: "lineage.touch@1.0-service.m1926",
-    init_rc: ["lineage.touch@1.0-service.m1926.rc"],
+    name: "asop.touch@1.0-service.m1926",
+    init_rc: ["asop.touch@1.0-service.m1926.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
@@ -19,6 +19,6 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.touch@1.0",
+        "vendor.asop.touch@1.0",
     ],
 }

@@ -20,7 +20,7 @@
 #define EPOLLEVENTS 20
 
 namespace vendor {
-namespace lineage {
+namespace asop {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -113,5 +113,5 @@ error:
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace lineage
+}  // namespace asop
 }  // namespace vendor

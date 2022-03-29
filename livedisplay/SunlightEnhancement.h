@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
+#ifndef VENDOR_ASOP_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
+#define VENDOR_ASOP_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
 
-#include <vendor/lineage/livedisplay/2.0/ISunlightEnhancement.h>
+#include <vendor/asop/livedisplay/2.0/ISunlightEnhancement.h>
 
 namespace vendor {
-namespace lineage {
+namespace asop {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -35,7 +35,7 @@ class SunlightEnhancement : public ISunlightEnhancement {
   public:
     bool isSupported();
 
-    // Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
+    // Methods from ::vendor::asop::livedisplay::V2_0::ISunlightEnhancement follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
 };
@@ -43,7 +43,7 @@ class SunlightEnhancement : public ISunlightEnhancement {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace asop
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H
+#endif  // VENDOR_ASOP_LIVEDISPLAY_V2_0_SUNLIGHTENHANCEMENT_H

@@ -30,7 +30,7 @@
 #include <string>
 
 namespace vendor {
-namespace lineage {
+namespace asop {
 namespace livedisplay {
 namespace V2_0 {
 namespace sdm {
@@ -70,5 +70,5 @@ int Utils::sendDPPSCommand(char* buf, size_t len) {
 }  // namespace sdm
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace lineage
+}  // namespace asop
 }  // namespace vendor
