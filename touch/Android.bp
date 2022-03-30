@@ -19,6 +19,6 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.aosp.touch@1.0",
+        // "vendor.lineage.touch@1.0",
     ],
 }
